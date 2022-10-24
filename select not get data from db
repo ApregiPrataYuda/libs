@@ -6,3 +6,19 @@
                 <option value="P" <?=$row->gender == 'P' ? 'selected' : '' ?> >P</option>
                 </select>
               </div>
+
+
+
+
+
+//select get data from db
+<div class="form-group">
+                  <label for="categori_id" style="color:blue;">Categori barang***</label>
+                   <select name="categori_id" id="categori_id"  class="form-control">
+                      <option value="">-pilih-</option>
+                     <?php foreach ($Category->result() as $key => $data) {  ?>
+                           <option value="<?=$data->categori_id?>"  <?=$data->categori_id == $row->categori_id ? "selected" : null?>><?=$data->name?></option>
+                                 
+                     <?php } ?>
+                   </select>
+             </div>
