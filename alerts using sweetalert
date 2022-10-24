@@ -1,0 +1,3 @@
+    //for alerts using sweetalert
+    <div id="flash" data-flash="<?= $this->session->flashdata('pesan') ?>">
+        <div id="flasherr" data-flasherr="<?= $this->session->flashdata('error') ?>">
