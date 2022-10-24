@@ -1,0 +1,8 @@
+<div class="form-group">
+              <label style="color:blue;" for="gender"> jenis kelamin*</label>
+                <select name="gender" id="gender" class="form-control">
+                <option value="">-pilih-</option>
+                <option value="L" <?=$row->gender == 'L' ? 'selected' : '' ?> >L</option>
+                <option value="P" <?=$row->gender == 'P' ? 'selected' : '' ?> >P</option>
+                </select>
+              </div>
